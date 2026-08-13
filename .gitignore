@@ -1,0 +1,14 @@
+# Java class files
+*.class
+
+# Maven build directory
+target/
+
+# Bin output directory
+bin/
+
+# IDE / System files
+.DS_Store
+.idea/
+*.iml
+.vscode/

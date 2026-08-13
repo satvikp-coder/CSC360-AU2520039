@@ -1,9 +1,74 @@
-CSC360 — Computer Graphics and Digital Image Processing
+# CSC360 - Computer Graphics Projects
 
-Coursework, projects, and exercises for CSC360 at Ahmedabad University, Monsoon Semester 2026.
+This repository contains Java Swing applications created for **CSC360 (Computer Graphics)** focusing on 2D graphics rendering, geometric transformations, and animations using `Java AWT` and `Swing`.
 
-Instructor: Susanta Tewari (susanta.tewari@ahduni.edu.in) Credits: 3 · Schedule: Tue & Thu, 2:30–4:00 PM (03-08-26 to 22-11-26) Pedagogy: Project-Based Learning (PBL)
+---
 
-About the Course
+## 📁 Repository Structure
 
-An introduction to two-dimensional computer graphics and digital image processing, built on Java 2D and JavaFX. The first half covers graphics fundamentals — geometric transformations, line/curve rendering algorithms, area filling, and color models. The second half moves into digital image processing — image acquisition, histograms, convolution/filtering, and edge detection (including Canny) using ImageJ.
+```text
+CSC360/
+├── moving-triangle/      # Java Swing applications for 2D Transformations
+│   ├── MovingTriangle.java   # Triangle following mouse cursor via Translation
+│   └── ZoomingTriangle.java  # Animated zooming triangle via Scaling
+└── nvm-square/           # Maven-based Java Swing project
+    ├── pom.xml               # Maven configuration file
+    └── src/main/java/com/example/App.java  # Basic square rendering
+```
+
+---
+
+## 🚀 Projects Overview
+
+### 1. Moving & Zooming Triangles (`moving-triangle`)
+
+Demonstrates 2D geometric transformations using `java.awt.geom.AffineTransform` and `Path2D.Double`.
+
+* **`MovingTriangle.java`**:
+  * **Concept**: 2D Translation (`AffineTransform.translate()`) & Event Handling.
+  * **Behavior**: Renders a blue triangle centered at `(0,0)` and dynamically transforms its position to match the mouse cursor position in real time using a `MouseMotionListener`.
+  * **How to Run**:
+    ```bash
+    cd moving-triangle
+    javac MovingTriangle.java
+    java MovingTriangle
+    ```
+
+* **`ZoomingTriangle.java`**:
+  * **Concept**: 2D Scaling (`AffineTransform.scale()`), Translation & Swing Timer Animation.
+  * **Behavior**: Renders a red triangle oscillating between minimum (`0.4x`) and maximum (`2.5x`) scale factors driven by a 30ms Swing `Timer`. It translates to the panel center prior to scaling so the zoom remains centered.
+  * **How to Run**:
+    ```bash
+    cd moving-triangle
+    javac ZoomingTriangle.java
+    java ZoomingTriangle
+    ```
+
+---
+
+### 2. Maven Square App (`nvm-square`)
+
+A foundational Maven-configured Java Swing project demonstrating primitive shape rendering.
+
+* **`App.java`**:
+  * **Concept**: Custom 2D painting via `Graphics.fillRect()`.
+  * **Behavior**: Opens a 500x500 window and paints a solid 200x200 blue square centered in the view.
+  * **How to Build & Run with Maven**:
+    ```bash
+    cd nvm-square
+    mvn clean compile
+    mvn exec:java -Dexec.mainClass="com.example.App"
+    ```
+  * **How to Run directly with Java**:
+    ```bash
+    cd nvm-square
+    javac -d bin src/main/java/com/example/App.java
+    java -cp bin com.example.App
+    ```
+
+---
+
+## 🛠️ Prerequisites
+
+* **Java Development Kit (JDK)**: Java 8 or higher
+* **Apache Maven** (optional, required only for `nvm-square` build management)
