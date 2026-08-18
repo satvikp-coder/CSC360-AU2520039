@@ -1,0 +1,22 @@
+Document: Notes (Project Setup & Documentation)
+Date: 18/08/2026
+
+Summary of Tasks & GitHub Integration:
+
+1. Project Organization & Code Verification:
+   - Moving Triangle (MovingTriangle.java): Renders a 2D blue triangle following mouse cursor coordinates in real time via AffineTransform.translate() and MouseMotionListener.
+   - Zooming Triangle (ZoomingTriangle.java): Renders a 2D red triangle continuously scaling in/out via AffineTransform.scale() and a 30ms Swing Timer.
+   - Maven Square App (nvm-square): Maven-configured Java Swing project rendering a 200x200 blue square via Graphics.fillRect(). Tested build using `mvn compile`.
+
+2. Documentation Setup:
+   - Created root README.md with overall repository structure, concepts, and execution commands.
+   - Created dedicated README.md files inside moving-triangle/ and nvm-square/ directories.
+   - Created .gitignore to exclude compiled binaries (.class, target/, bin/).
+
+3. Git Configuration & GitHub Sync:
+   - Verified SSH key authentication (id_ed25519) with GitHub user `satvikp-coder`.
+   - Updated local and global Git configuration:
+     - user.name = satvikp-coder
+     - user.email = satvik.p@ahduni.edu.in
+   - Amended commit history so author reflects satvikp-coder.
+   - Force-pushed updated branch to https://github.com/satvikp-coder/CSC360-AU2520039 on main branch.
