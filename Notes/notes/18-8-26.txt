@@ -1,22 +1,27 @@
-Document: Notes (Project Setup & Documentation)
+Document 3: Notes (Today's Work)
 Date: 18/08/2026
 
-Summary of Tasks & GitHub Integration:
+Maven & Java 2D Square Program
 
-1. Project Organization & Code Verification:
-   - Moving Triangle (MovingTriangle.java): Renders a 2D blue triangle following mouse cursor coordinates in real time via AffineTransform.translate() and MouseMotionListener.
-   - Zooming Triangle (ZoomingTriangle.java): Renders a 2D red triangle continuously scaling in/out via AffineTransform.scale() and a 30ms Swing Timer.
-   - Maven Square App (nvm-square): Maven-configured Java Swing project rendering a 200x200 blue square via Graphics.fillRect(). Tested build using `mvn compile`.
+Maven Overview
+- Maven is a build automation and project management tool for Java applications.
+- Manages project structure, dependencies, compilation, and execution automatically.
+- Uses `pom.xml` (Project Object Model) as the central configuration file.
 
-2. Documentation Setup:
-   - Created root README.md with overall repository structure, concepts, and execution commands.
-   - Created dedicated README.md files inside moving-triangle/ and nvm-square/ directories.
-   - Created .gitignore to exclude compiled binaries (.class, target/, bin/).
+Key Maven Commands
+- `mvn clean`: Cleans previous build outputs (`target/` directory).
+- `mvn compile`: Compiles Java source files into bytecode under `target/classes`.
+- `mvn test`: Runs unit test cases (e.g., JUnit tests in `AppTest.java`).
+- `mvn exec:java -Dexec.mainClass="com.example.App"`: Runs the main Java application.
 
-3. Git Configuration & GitHub Sync:
-   - Verified SSH key authentication (id_ed25519) with GitHub user `satvikp-coder`.
-   - Updated local and global Git configuration:
-     - user.name = satvikp-coder
-     - user.email = satvik.p@ahduni.edu.in
-   - Amended commit history so author reflects satvikp-coder.
-   - Force-pushed updated branch to https://github.com/satvikp-coder/CSC360-AU2520039 on main branch.
+Java 2D Square Program (`nvm-square`)
+- Created a Java Swing program using Maven directory layout (`src/main/java/com/example/App.java`).
+- `App` class extends `javax.swing.JPanel`.
+- Overrides `paintComponent(Graphics g)` to perform 2D shape rendering.
+- Uses `g.setColor(Color.BLUE)` to set the drawing brush color.
+- Uses `g.fillRect(150, 100, 200, 200)` to render a solid blue square.
+- Hosted inside a `JFrame` window (size 500x500) set to `EXIT_ON_CLOSE`.
+
+Summary
+- Learned how Maven simplifies building Java Swing applications.
+- Practiced custom 2D shape drawing using Java AWT Graphics primitives.
