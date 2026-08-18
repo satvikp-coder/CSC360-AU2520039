@@ -1,4 +1,4 @@
-# Maven Square Project (`nvm-square`)
+# Maven Square Project (`maven-square`)
 
 A Maven-managed Java Swing application demonstrating basic shape rendering using `java.awt.Graphics`.
 
@@ -7,7 +7,7 @@ A Maven-managed Java Swing application demonstrating basic shape rendering using
 ## 📁 Project Structure
 
 ```text
-nvm-square/
+maven-square/
 ├── pom.xml                                   # Maven build configuration
 └── src/main/java/com/example/App.java        # Main Java Swing application
 ```

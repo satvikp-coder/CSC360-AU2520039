@@ -14,7 +14,7 @@ Key Maven Commands
 - `mvn test`: Runs unit test cases (e.g., JUnit tests in `AppTest.java`).
 - `mvn exec:java -Dexec.mainClass="com.example.App"`: Runs the main Java application.
 
-Java 2D Square Program (`nvm-square`)
+Java 2D Square Program (`maven-square`)
 - Created a Java Swing program using Maven directory layout (`src/main/java/com/example/App.java`).
 - `App` class extends `javax.swing.JPanel`.
 - Overrides `paintComponent(Graphics g)` to perform 2D shape rendering.

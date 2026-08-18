@@ -11,7 +11,7 @@ CSC360/
 ├── moving-triangle/      # Java Swing applications for 2D Transformations
 │   ├── MovingTriangle.java   # Triangle following mouse cursor via Translation
 │   └── ZoomingTriangle.java  # Animated zooming triangle via Scaling
-└── nvm-square/           # Maven-based Java Swing project
+└── maven-square/         # Maven-based Java Swing project
     ├── pom.xml               # Maven configuration file
     └── src/main/java/com/example/App.java  # Basic square rendering
 ```
@@ -46,7 +46,7 @@ Demonstrates 2D geometric transformations using `java.awt.geom.AffineTransform` 
 
 ---
 
-### 2. Maven Square App (`nvm-square`)
+### 2. Maven Square App (`maven-square`)
 
 A foundational Maven-configured Java Swing project demonstrating primitive shape rendering.
 
@@ -55,13 +55,13 @@ A foundational Maven-configured Java Swing project demonstrating primitive shape
   * **Behavior**: Opens a 500x500 window and paints a solid 200x200 blue square centered in the view.
   * **How to Build & Run with Maven**:
     ```bash
-    cd nvm-square
+    cd maven-square
     mvn clean compile
     mvn exec:java -Dexec.mainClass="com.example.App"
     ```
   * **How to Run directly with Java**:
     ```bash
-    cd nvm-square
+    cd maven-square
     javac -d bin src/main/java/com/example/App.java
     java -cp bin com.example.App
     ```
@@ -71,4 +71,4 @@ A foundational Maven-configured Java Swing project demonstrating primitive shape
 ## 🛠️ Prerequisites
 
 * **Java Development Kit (JDK)**: Java 8 or higher
-* **Apache Maven** (optional, required only for `nvm-square` build management)
+* **Apache Maven** (optional, required only for `maven-square` build management)
