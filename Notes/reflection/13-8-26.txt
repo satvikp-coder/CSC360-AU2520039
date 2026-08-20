@@ -1,0 +1,53 @@
+Document: Class Reflection (Lab & Class Work)
+Date: 13/08/2026
+
+Topic: Maven Setup, Java 2D Projects, Frameworks & GitHub SSH Setup
+
+1. Maven Setup & Project Structure (`maven-square`)
+--------------------------------------------------
+- Initialized Maven project for Java Swing applications (`pom.xml`).
+- Structured standard directory layout:
+  * `src/main/java/com/example/App.java`: Main Java Swing application rendering primitives.
+  * `src/test/java/com/example/AppTest.java`: Automated JUnit test cases.
+  * `pom.xml`: Defines project dependencies, compiler targets, and build lifecycle.
+- Learned core Maven commands:
+  * `mvn compile`: Builds Java source files into bytecode under `target/classes`.
+  * `mvn exec:java -Dexec.mainClass="com.example.App"`: Executes main application.
+
+2. Java 2D Geometric Transformation Projects (`moving-triangle`)
+------------------------------------------------------------------
+- Moving Triangle (`MovingTriangle.java`):
+  * Defined an equilateral triangle centered at origin (0,0).
+  * Used `MouseMotionListener` to track cursor coordinates `(mouseX, mouseY)`.
+  * Applied `AffineTransform.translate(mouseX, mouseY)` inside `paintComponent()` so the shape centroid follows the mouse.
+
+- Zooming Triangle (`ZoomingTriangle.java`):
+  * Created continuous zoom-in / zoom-out animation.
+  * Oscillated `scale` factor between `MIN_SCALE` (0.4) and `MAX_SCALE` (2.5) using a 30ms Swing `Timer`.
+  * Combined `AffineTransform.translate(cx, cy)` and `AffineTransform.scale(scale, scale)` to keep scaling centered.
+
+3. Java GUI & Graphics Frameworks Comparison
+--------------------------------------------
+- AWT (Abstract Window Toolkit):
+  * Original Java GUI toolkit (`java.awt`).
+  * Heavyweight components mapping directly to native OS peers.
+- Swing:
+  * Built on AWT (`javax.swing`).
+  * Lightweight, 100% Java components painted on canvas (`JPanel`, `JFrame`).
+- JavaFX:
+  * Modern Java client platform supporting hardware-accelerated 2D/3D graphics, FXML, and CSS.
+
+4. GitHub Security & Key Authentication
+----------------------------------------
+- SSH Authentication:
+  * Connects securely using public/private key pairs generated via `ssh-keygen`.
+  * Public key (`id_ed25519.pub`) is uploaded to GitHub account (`satvikp-coder`).
+  * Private key (`id_ed25519`) remains secret on the local machine.
+- HTTPS Authentication:
+  * Uses web credentials / Personal Access Tokens (PAT).
+
+5. Computer Graphics vs Image Processing
+-----------------------------------------
+- Computer Graphics: Synthesizes new visual objects and scenes from mathematical models (e.g., 3D gaming, vector shapes).
+- Image Processing: Analyzes and enhances existing raster images (e.g., photo filtering, noise reduction).
+- Geometric Primitives: Basic shapes used in rendering (Point, Line, Triangle, Rectangle, Circle, Polygon, Curve).
