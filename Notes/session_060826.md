@@ -11,11 +11,11 @@ In contrast, HTTPS authentication relies on web-standard protocols using a usern
 
 ```mermaid
 flowchart LR
-    subgraph Local Machine
+    subgraph LocalMachine ["Local Machine"]
         A["ssh-keygen"] --> B["Private Key (Secret)"]
         A --> C["Public Key (.pub)"]
     end
-    subgraph GitHub Server
+    subgraph GitHubServer ["GitHub Server"]
         D["Account SSH Keys"]
     end
     C -- "One-time Upload" --> D

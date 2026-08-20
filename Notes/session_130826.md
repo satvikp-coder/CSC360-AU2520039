@@ -11,12 +11,12 @@ The standard Maven directory structure enforces strict separation of concerns. P
 
 ```mermaid
 flowchart TD
-    subgraph Maven Directory Layout
+    subgraph Layout ["Maven Directory Layout"]
         A["pom.xml"]
         B["src/main/java/ (Production Code)"]
         C["src/test/java/ (Unit Tests)"]
     end
-    subgraph Maven Lifecycle Commands
+    subgraph Lifecycle ["Maven Lifecycle Commands"]
         D["mvn clean"] --> E["mvn compile"]
         E --> F["mvn test"]
         F --> G["mvn exec:java"]
@@ -32,7 +32,7 @@ In `ZoomingTriangle.java`, continuous scaling animation is driven by a 30ms `jav
 
 ```mermaid
 flowchart LR
-    subgraph Zooming Transform Pipeline
+    subgraph Pipeline ["Zooming Transform Pipeline"]
         A["Base Shape at (0,0)"] --> B["1. Translate to Center (cx, cy)"]
         B --> C["2. Scale Matrix (scale, scale)"]
         C --> D["Centered Zoom Result"]

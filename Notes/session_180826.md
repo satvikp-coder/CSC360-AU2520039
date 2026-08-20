@@ -27,13 +27,13 @@ Swing introduced "lightweight" components written entirely in Java (`javax.swing
 
 ```mermaid
 flowchart LR
-    subgraph AWT (Heavyweight)
+    subgraph AWT ["AWT (Heavyweight)"]
         A1["Java AWT Control"] --> A2["OS Native Peer (Windows/Mac/Linux)"]
     end
-    subgraph Swing (Lightweight)
+    subgraph Swing ["Swing (Lightweight)"]
         B1["Java Swing Control"] --> B2["Direct Java 2D Canvas Graphics"]
     end
-    subgraph JavaFX (Modern)
+    subgraph JavaFX ["JavaFX (Modern)"]
         C1["JavaFX Scene Graph"] --> C2["Hardware-Accelerated Prism Pipeline"]
     end
 ```
