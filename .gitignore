@@ -12,3 +12,7 @@ bin/
 .idea/
 *.iml
 .vscode/
+
+# Agent custom rules
+.agents/
+
