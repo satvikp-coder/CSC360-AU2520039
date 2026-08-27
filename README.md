@@ -1,6 +1,6 @@
-# CSC360 - Computer Graphics Projects
+# CSC360 - Computer Graphics & Java GUI Programming
 
-This repository contains Java Swing applications created for **CSC360 (Computer Graphics)** focusing on 2D graphics rendering, geometric transformations, and animations using `Java AWT` and `Swing`.
+This repository contains practical projects, experiments, and comprehensive class notes created for **CSC360 (Computer Graphics)**. It covers 2D graphics rendering, geometric transformations, event-driven animations using Java AWT/Swing and JavaFX, Maven project management, and concurrency fundamentals.
 
 ---
 
@@ -10,10 +10,18 @@ This repository contains Java Swing applications created for **CSC360 (Computer 
 CSC360/
 ├── moving-triangle/      # Java Swing applications for 2D Transformations
 │   ├── MovingTriangle.java   # Triangle following mouse cursor via Translation
-│   └── ZoomingTriangle.java  # Animated zooming triangle via Scaling
-└── maven-square/         # Maven-based Java Swing project
-    ├── pom.xml               # Maven configuration file
-    └── src/main/java/com/example/App.java  # Basic square rendering
+│   └── ZoomingTriangle.java  # Animated zooming triangle via Scaling & Timer
+├── maven-square/         # Maven-based Java Swing project
+│   ├── pom.xml               # Maven Project Object Model configuration
+│   └── src/main/java/com/example/App.java  # Custom 2D square rendering
+└── Notes/                # Structured lecture notes, reflections & practice questions
+    ├── 06-aug-2026.md        # SSH vs HTTPS, Vector vs Raster Graphics
+    ├── 13-aug-2026.md        # Maven architecture, Coordinate systems & Transformations
+    ├── 18-aug-2026.md        # Paint cycle, AWT vs Swing vs JavaFX, Timer & Mouse events
+    ├── 20-aug-2026.md        # Documentation standards, OOP inheritance, AffineTransform & Path2D
+    ├── 25-aug-2026.md        # Maven pom.xml, Swing in JavaFX, Processes vs Threads, Thread Safety
+    └── Questions/            # Practice problem sets & review questions
+        └── 6-8-26.md         # Practice questions on SSH/HTTPS & Raster/Vector graphics
 ```
 
 ---
@@ -25,7 +33,7 @@ CSC360/
 Demonstrates 2D geometric transformations using `java.awt.geom.AffineTransform` and `Path2D.Double`.
 
 * **`MovingTriangle.java`**:
-  * **Concept**: 2D Translation (`AffineTransform.translate()`) & Event Handling.
+  * **Concept**: 2D Translation (`AffineTransform.translate()`) and dynamic mouse tracking.
   * **Behavior**: Renders a blue triangle centered at `(0,0)` and dynamically transforms its position to match the mouse cursor position in real time using a `MouseMotionListener`.
   * **How to Run**:
     ```bash
@@ -48,7 +56,7 @@ Demonstrates 2D geometric transformations using `java.awt.geom.AffineTransform` 
 
 ### 2. Maven Square App (`maven-square`)
 
-A foundational Maven-configured Java Swing project demonstrating primitive shape rendering.
+A foundational Maven-configured Java Swing project demonstrating primitive shape rendering and build lifecycle automation.
 
 * **`App.java`**:
   * **Concept**: Custom 2D painting via `Graphics.fillRect()`.
@@ -68,7 +76,23 @@ A foundational Maven-configured Java Swing project demonstrating primitive shape
 
 ---
 
-## 🛠️ Prerequisites
+## 📝 Class Notes & Reflections (`Notes/`)
 
-* **Java Development Kit (JDK)**: Java 8 or higher
-* **Apache Maven** (optional, required only for `maven-square` build management)
+Each class session includes in-depth notes with diagrams and concise reflections:
+
+| Date | Key Topics Covered | Notes File |
+| :--- | :--- | :--- |
+| **06 Aug 2026** | GitHub Authentication (SSH vs HTTPS), Vector vs Raster Graphics | [`06-aug-2026.md`](Notes/06-aug-2026.md) |
+| **13 Aug 2026** | Maven Architecture & Lifecycle, 2D Coordinate Systems, Affine Transformations | [`13-aug-2026.md`](Notes/13-aug-2026.md) |
+| **18 Aug 2026** | Swing Paint Cycle (`paintComponent`), GUI Frameworks (AWT/Swing/JavaFX), Timer Animation, Mouse Listeners | [`18-aug-2026.md`](Notes/18-aug-2026.md) |
+| **20 Aug 2026** | Documentation Pipeline, Java OOP & `@Override`, `AffineTransform`, `Path2D.Double` Geometry | [`20-aug-2026.md`](Notes/20-aug-2026.md) |
+| **25 Aug 2026** | Importance of `pom.xml`, `javax.swing` in JavaFX, Processes vs Threads, Thread Safety, Click Me Button | [`25-aug-2026.md`](Notes/25-aug-2026.md) |
+| **Review Sets** | Practice questions covering graphics fundamentals & Git workflows | [`Questions/6-8-26.md`](Notes/Questions/6-8-26.md) |
+
+---
+
+## 🛠️ Prerequisites & Environment
+
+* **Java Development Kit (JDK)**: Java 8 or higher (Java 17+ recommended)
+* **Apache Maven**: Version 3.8+ (for building Maven-managed projects)
+* **Git**: For version control

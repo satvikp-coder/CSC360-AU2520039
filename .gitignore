@@ -13,6 +13,9 @@ bin/
 *.iml
 .vscode/
 
+# External repository
+external/
+
 # Agent custom rules
 .agents/
 
