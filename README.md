@@ -21,6 +21,7 @@ CSC360/
     ├── 20-aug-2026.md        # Documentation standards, OOP inheritance, AffineTransform & Path2D
     ├── 25-aug-2026.md        # Maven pom.xml, Swing in JavaFX, Processes vs Threads, Thread Safety
     ├── 27-aug-2026.md        # JAR & Class files, CI/CD, UTF-8, Source vs Runtime, JUnit, Maven Dependencies
+    ├── 01-sep-2026.md        # Triangle from equations, Determinants, JavaFX Canvas Project, Binary Trees
     └── Questions/            # Practice problem sets & review questions
         └── 6-8-26.md         # Practice questions on SSH/HTTPS & Raster/Vector graphics
 ```
@@ -89,6 +90,7 @@ Each class session includes in-depth notes with diagrams and concise reflections
 | **20 Aug 2026** | Documentation Pipeline, Java OOP & `@Override`, `AffineTransform`, `Path2D.Double` Geometry | [`20-aug-2026.md`](Notes/20-aug-2026.md) |
 | **25 Aug 2026** | Importance of `pom.xml`, `javax.swing` in JavaFX, Processes vs Threads, Thread Safety, Click Me Button | [`25-aug-2026.md`](Notes/25-aug-2026.md) |
 | **27 Aug 2026** | JAR & Class Files in Git, CI/CD Overview, UTF-8 Encoding, Source vs Runtime Version, JUnit & Testing, Maven Dependencies | [`27-aug-2026.md`](Notes/27-aug-2026.md) |
+| **01 Sep 2026** | Triangle from 3 Equations & Determinants, JavaFX Circle & Arrow Canvas Project, Binary Tree Visualization | [`01-sep-2026.md`](Notes/01-sep-2026.md) |
 | **Review Sets** | Practice questions covering graphics fundamentals & Git workflows | [`Questions/6-8-26.md`](Notes/Questions/6-8-26.md) |
 
 ---
