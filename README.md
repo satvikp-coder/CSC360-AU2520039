@@ -95,7 +95,23 @@ Each class session includes in-depth notes with diagrams and concise reflections
 | **01 Sep 2026** | Triangle from 3 Equations & Determinants, JavaFX Circle & Arrow Canvas Project, Binary Tree Visualization | [`01-sep-2026.md`](Notes/01-sep-2026.md) |
 | **03 Sep 2026** | ASCII Tree Keyboard Drawing, Print vs Drawing, CLI vs GUI, Arrow-Drawing Between Common Elements, Splash Screens | [`03-sep-2026.md`](Notes/03-sep-2026.md) |
 | **08 Sep 2026** | Java Collections (List/Set/Map), GUI View vs DBMS View, Event-Driven Graphics, CSS Grid, Form Controls (Checkbox/Radio/Slider), Dialogs vs Toasts, JavaFX Graph Editor | [`08-sep-2026.md`](Notes/08-sep-2026.md) |
+| **10 Sep 2026** | Advanced Java SE: Stream API, NIO Channels, XML, Networking, JDBC, Security, Advanced Swing/AWT | [`10-sep-2026.md`](Notes/10-sep-2026.md) |
 | **Review Sets** | Practice questions covering graphics fundamentals & Git workflows | [`Questions/6-8-26.md`](Notes/Questions/6-8-26.md) |
+
+---
+
+## 🎓 Theory into Practice: Application of Classroom Lessons
+
+This repository is structured to directly reflect and implement the theoretical principles taught across the CSC360 lecture sessions:
+
+| Lecture Domain | Core Classroom Theory Taught | Practical Implementation in this Repository | Relevant Code & Artifacts |
+| :--- | :--- | :--- | :--- |
+| **2D Geometric Modeling & Affine Transformations** | Defining shapes at canonical origin `(0,0)` and manipulating spatial states via transformation matrices ($T \cdot S \cdot R$) rather than mutating raw vertex coordinates. | • Shapes defined once centered at `(0,0)` via `Path2D.Double`.<br>• Real-time cursor tracking via `AffineTransform.translate()`.<br>• Centered zoom animation via `AffineTransform.scale()` with center-translation offset. | [`MovingTriangle.java`](moving-triangle/MovingTriangle.java)<br>[`ZoomingTriangle.java`](moving-triangle/ZoomingTriangle.java) |
+| **GUI Lifecycle, EDT & Animation Pacing** | Single-threaded Event Dispatch Thread (EDT) safety, `paintComponent` rendering lifecycle, and driving animations through timer callbacks instead of busy-wait loops. | • Rigorous `super.paintComponent(g)` invocation on every redraw.<br>• Mouse motion listeners decouple state mutation from rendering via `repaint()`.<br>• 30ms (~33 FPS) frame pacing driven by `javax.swing.Timer`. | [`MovingTriangle.java`](moving-triangle/MovingTriangle.java)<br>[`ZoomingTriangle.java`](moving-triangle/ZoomingTriangle.java)<br>[`App.java`](maven-square/src/main/java/com/example/App.java) |
+| **Declarative Build Systems & Dependency Isolation** | Standard Maven directory layout (`src/main/java`), deterministic builds with explicit character encoding, bytecode target levels, and scope-based dependency isolation. | • Explicit `<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>` for cross-platform consistency.<br>• `<maven.compiler.release>17</maven.compiler.release>` to prevent JVM version mismatches.<br>• Scoping `junit` strictly to `<scope>test</scope>` to prevent artifact bloat.<br>• Automated run workflow configured via `exec-maven-plugin`. | [`maven-square/pom.xml`](maven-square/pom.xml) |
+| **Source Control & Binary Exclusion Hygiene** | Storing only human-authored source and build manifests in Git; strictly excluding compiled binaries (`.class`), archives (`.jar`), and build directories (`target/`) to avoid repo bloat and binary merge conflicts. | • Comprehensive `.gitignore` configuration excluding all compiler output, JAR packages, target folders, and IDE caches.<br>• Clean reproducibility on any machine with `mvn clean compile`. | [`.gitignore`](.gitignore)<br>[`pom.xml`](maven-square/pom.xml) |
+| **Mathematical Geometry & Graph Visualization** | Solving line intersections via 2×2 matrix determinants ($D = a_1b_2 - a_2b_1$) and transitioning from CLI/text structures (ASCII trees) to interactive canvas graphics (circle nodes with perimeter-docked directional arrows). | • Vertex calculation models from linear systems.<br>• Node-and-arrow rendering mechanics with clean angular arrowheads.<br>• Binary tree hierarchy layouts with non-overlapping child distribution. | [`Notes/01-sep-2026.md`](Notes/01-sep-2026.md)<br>[`Notes/03-sep-2026.md`](Notes/03-sep-2026.md)<br>[`Notes/08-sep-2026.md`](Notes/08-sep-2026.md) |
+| **Modern Java Pipelines & Architecture** | Transitioning from imperative loops to declarative Stream API pipelines, NIO buffer channels, JDBC transaction abstractions, and Swing MVC patterns. | • Declarative pipeline modeling, data structures, and architectural flowcharts for scalable graphics and enterprise data processing. | [`Notes/10-sep-2026.md`](Notes/10-sep-2026.md) |
 
 ---
 
