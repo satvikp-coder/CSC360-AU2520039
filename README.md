@@ -30,7 +30,8 @@ CSC360/
     │   ├── 17-sep-2026.md        # Cross-Project Peer Reviews, JavaFX Canvas Coordinate Math, Event-Driven Mouse Routing, Model-View Reset
     │   └── 29-sep-2026.md        # Desktop Graph Editor, Command Pattern, Custom LinkedStack, Hit Detection & JSON Codec
     ├── October/              # Notes and reflections for October 2026
-    │   └── 01-oct-2026.md        # Professor Project Review, Graph Editor Architecture, Command Hierarchy, Custom LinkedStack
+    │   ├── 01-oct-2026.md        # Professor Project Review, Graph Editor Architecture, Command Hierarchy, Custom LinkedStack
+    │   └── 22-oct-2026.md        # GitHub standards, Conventional Commits, Javadoc, Image Processing, Burger's Book, ImageJ & Maven
     └── Questions/            # Practice problem sets & review questions
         └── 6-8-26.md         # Practice questions on SSH/HTTPS & Raster/Vector graphics
 ```
@@ -106,6 +107,7 @@ Each class session includes in-depth notes with diagrams and concise reflections
 | **17 Sep 2026** | Cross-Project Peer Reviews, JavaFX Canvas Coordinate Math, Event-Driven Mouse Routing, Model-View Two-Phase Reset, GitHub Issues #5 & #10 | [`17-sep-2026.md`](Notes/September/17-sep-2026.md) |
 | **29 Sep 2026** | Desktop Graph Editor Architecture, Domain Modeling, Command Pattern Undo/Redo, Custom `LinkedStack`, Gesture Disambiguation, Hit Detection (`GeometryUtils`), `PullMotionModel`, Monotonic JSON Codec | [`29-sep-2026.md`](Notes/September/29-sep-2026.md) |
 | **01 Oct 2026** | Professor Project Review: Desktop Architecture & Controller Decoupling, Immutability Patterns, Command Reversibility, Custom `LinkedStack`, Gesture Disambiguation, Boundary Docking, Model Invariance, Test Automation | [`01-oct-2026.md`](Notes/October/01-oct-2026.md) |
+| **22 Oct 2026** | Professional GitHub Standards (README/Tests), Conventional Commits & SemVer, Javadoc Contracts, Digital Image Processing, Burger & Burge Book, Image Sampling & Quantization, ImageJ Architecture & Maven Dependency | [`22-oct-2026.md`](Notes/October/22-oct-2026.md) |
 | **Review Sets** | Practice questions covering graphics fundamentals & Git workflows | [`Questions/6-8-26.md`](Notes/Questions/6-8-26.md) |
 
 ---
