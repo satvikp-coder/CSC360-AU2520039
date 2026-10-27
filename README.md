@@ -31,7 +31,8 @@ CSC360/
     │   └── 29-sep-2026.md        # Desktop Graph Editor, Command Pattern, Custom LinkedStack, Hit Detection & JSON Codec
     ├── October/              # Notes and reflections for October 2026
     │   ├── 01-oct-2026.md        # Professor Project Review, Graph Editor Architecture, Command Hierarchy, Custom LinkedStack
-    │   └── 22-oct-2026.md        # GitHub standards, Conventional Commits, Javadoc, Image Processing, Burger's Book, ImageJ & Maven
+    │   ├── 22-oct-2026.md        # GitHub standards, Conventional Commits, Javadoc, Image Processing, Burger's Book, ImageJ & Maven
+    │   └── 27-oct-2026.md        # Java Interface contracts, ActionListener vs ChangeListener, UI & UX design, EDT Concurrency
     └── Questions/            # Practice problem sets & review questions
         └── 6-8-26.md         # Practice questions on SSH/HTTPS & Raster/Vector graphics
 ```
@@ -108,6 +109,7 @@ Each class session includes in-depth notes with diagrams and concise reflections
 | **29 Sep 2026** | Desktop Graph Editor Architecture, Domain Modeling, Command Pattern Undo/Redo, Custom `LinkedStack`, Gesture Disambiguation, Hit Detection (`GeometryUtils`), `PullMotionModel`, Monotonic JSON Codec | [`29-sep-2026.md`](Notes/September/29-sep-2026.md) |
 | **01 Oct 2026** | Professor Project Review: Desktop Architecture & Controller Decoupling, Immutability Patterns, Command Reversibility, Custom `LinkedStack`, Gesture Disambiguation, Boundary Docking, Model Invariance, Test Automation | [`01-oct-2026.md`](Notes/October/01-oct-2026.md) |
 | **22 Oct 2026** | Professional GitHub Standards (README/Tests), Conventional Commits & SemVer, Javadoc Contracts, Digital Image Processing, Burger & Burge Book, Image Sampling & Quantization, ImageJ Architecture & Maven Dependency | [`22-oct-2026.md`](Notes/October/22-oct-2026.md) |
+| **27 Oct 2026** | Java Interfaces as Architectural Contracts, Delegation Event Model, `ActionListener` vs `ChangeListener`, UI vs UX Engineering, EDT Concurrency & Background Worker Threads | [`27-oct-2026.md`](Notes/October/27-oct-2026.md) |
 | **Review Sets** | Practice questions covering graphics fundamentals & Git workflows | [`Questions/6-8-26.md`](Notes/Questions/6-8-26.md) |
 
 ---
@@ -126,6 +128,7 @@ This repository is structured to directly reflect and implement the theoretical 
 | **Interactive Canvas Events & Model-View State Synchronization** | Immediate-mode Canvas vs procedural GraphicsContext, bounding-box coordinate offset calculation ($centerX - r$), dispatching primary vs secondary mouse events, and two-phase atomic state resets. | • Right-click node generation with centered geometric offset.<br>• Synchronized visual wipe (`clearCanvas`) coupled with collection eviction (`circlePoints.clear()`).<br>• Defensive data encapsulation via `Collections.unmodifiableList()`. | [`Notes/September/17-sep-2026.md`](Notes/September/17-sep-2026.md) |
 | **Modern Java Pipelines & Architecture** | Transitioning from imperative loops to declarative Stream API pipelines, NIO buffer channels, JDBC transaction abstractions, and Swing MVC patterns. | • Declarative pipeline modeling, data structures, and architectural flowcharts for scalable graphics and enterprise data processing. | [`Notes/September/10-sep-2026.md`](Notes/September/10-sep-2026.md) |
 | **Desktop Graph Editor & Command Pattern Architecture** | Decoupling bootstrapping from JavaFX controller, Command pattern undo/redo with custom `LinkedStack`, boundary offset trigonometry (`atan2`), transient UI kinematics (`PullMotionModel`), and monotonic JSON serialization. | • Complete Graph Editor desktop suite.<br>• Reversible mutations (`EditCommand`).<br>• Custom singly-linked stack.<br>• GeometryUtils perimeter clipping & segment hit-detection.<br>• 27 automated JUnit tests. | [`Notes/September/29-sep-2026.md`](Notes/September/29-sep-2026.md)<br>[`Notes/October/01-oct-2026.md`](Notes/October/01-oct-2026.md) |
+| **GUI Event Delegation, UI/UX & Thread Decoupling** | Structuring event-driven user interaction via discrete (`ActionListener`) and continuous (`ChangeListener`) listener contracts, separating sensory UI presentation from cognitive UX task flow, and preserving single-threaded EDT responsiveness. | • Event delegation decoupling user input from domain state mutations.<br>• Offloading computationally intensive tasks from the EDT to background worker threads.<br>• Responsive visual feedback within the 100ms interaction threshold. | [`Notes/October/27-oct-2026.md`](Notes/October/27-oct-2026.md)<br>[`MovingTriangle.java`](moving-triangle/MovingTriangle.java)<br>[`ZoomingTriangle.java`](moving-triangle/ZoomingTriangle.java) |
 
 ---
 
